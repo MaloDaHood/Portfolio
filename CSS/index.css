@@ -15,7 +15,8 @@
 }
 
 .header .titre {
-    padding: 10px 10px;
+    padding: 0 10px;
+    line-height: 10vh;
     width: fit-content;
 }
 
@@ -26,14 +27,15 @@
 }
 
 .header .menu .lien {
-    padding: 15px 30px;
+    padding: 0 30px;
+    line-height: 10vh;
     width: fit-content;
 }
 
 .presentation {
     display: flex;
     width: 100%;
-    height: 90vh;
+    height: 50vh;
 }
 
 .presentation .photo {
@@ -52,24 +54,68 @@
     background-color: lightgreen;
     width: 50%;
     padding: 10px;
+    position: relative;
 }
 
 .presentation .texte .sous_titre {
     text-align: center;
-    padding: 10px;
+    padding-top: 30px;
 }
 
 .presentation .texte p {
     text-align: center;
     padding: 30px;
+    position: absolute;
+    top: 50%; /* poussé de la moitié de hauteur du référent */
+    transform: translateY(-50%);
+}
+
+.ggp {
+    width: 100%;
+    height: 40vh;
+}
+
+.ggp .maps {
+    width: 100%;
+    height: 100%;
+    border: 0;
 }
 
 .sites {
     width: 100%;
     height: 100vh;
+    display: flex;
 }
 
 .sites .frame {
     width: 50%;
     height: 100%;
+}
+
+.sites .infos{
+    background-color: darkgoldenrod;
+    width: 50%;
+    height: 100%;
+}
+
+.sites .infos .bloc {
+    text-align: center;
+    padding: 50px;
+}
+
+.sites .infos .bloc .nom {
+    padding: 10px;
+}
+
+.sites .infos .bloc .choix {
+    padding: 15px;
+}
+
+.sites .infos .bloc .choix .button {
+    padding: 10px;
+    width: 15%;
+}
+
+.sites .infos .bloc .description {
+    padding: 10px;
 }
