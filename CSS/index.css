@@ -81,9 +81,49 @@
     border: 0;
 }
 
-.sites {
+.separation {
+    background-color: burlywood;
+    height: 10vh;
     width: 100%;
-    height: 100vh;
+}
+
+.separation h1 {
+    line-height: 10vh;
+    font-size: 40px;
+    text-align: center;
+}
+
+.presentation_sites.active {
+    display: none;
+}
+
+.presentation_sites {
+    background-color: aquamarine;
+    width: 100%;
+    height: 90vh;
+}
+
+.presentation_sites .introWeb {
+    text-align: center;
+    padding: 80px 30px;
+    position: absolute;
+    left: 20%;
+    right: 20%;
+}
+
+.presentation_sites .switch {
+    padding: 25px;
+    margin: 40px;
+    width: fit-content;
+}
+
+.sites {
+    display: none;
+}
+
+.sites.active {
+    width: 100%;
+    height: 90vh;
     display: flex;
 }
 
@@ -100,7 +140,7 @@
 
 .sites .infos .bloc {
     text-align: center;
-    padding: 50px;
+    padding: 40px;
 }
 
 .sites .infos .bloc .nom {
@@ -118,4 +158,9 @@
 
 .sites .infos .bloc .description {
     padding: 10px;
+}
+
+.langages {
+    width: 100%;
+    height: 90vh;
 }
