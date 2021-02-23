@@ -44,10 +44,12 @@
     padding: 10px;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .presentation .photo img {
-    width: 100%;
+    max-width: 100%;
+    max-height: 100%;
 }
 
 .presentation .texte {
@@ -105,16 +107,14 @@
 
 .presentation_sites .introWeb {
     text-align: center;
-    padding: 80px 30px;
-    position: absolute;
-    left: 20%;
-    right: 20%;
+    padding: 80px 40px;
 }
 
 .presentation_sites .switch {
     padding: 25px;
     margin: 40px;
     width: fit-content;
+    cursor: pointer;
 }
 
 .sites {
@@ -140,7 +140,8 @@
 
 .sites .infos .bloc {
     text-align: center;
-    padding: 40px;
+    height: 30vh;
+    padding: 20px;
 }
 
 .sites .infos .bloc .nom {
@@ -154,6 +155,7 @@
 .sites .infos .bloc .choix .button {
     padding: 10px;
     width: 15%;
+    cursor: pointer;
 }
 
 .sites .infos .bloc .description {
@@ -161,6 +163,153 @@
 }
 
 .langages {
+    background-color: olive;
     width: 100%;
-    height: 90vh;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.langages.active {
+    display: none;
+}
+
+.langages .c {
+    padding: 50px;
+}
+
+.langages .c img {
+    cursor: pointer;
+}
+
+.langages .python {
+    padding: 50px;
+}
+
+.langages .python img {
+    width: 256px;
+    cursor: pointer;
+}
+
+.langages .java {
+    padding: 50px;
+}
+
+.langages .java img {
+    width: 256px;
+    cursor: pointer;
+}
+
+.prog_c {
+    display: none;
+}
+
+.prog_c.active {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+}
+
+.code {
+    background-color: slategray;
+    height: 100%;
+    width: 50%;
+}
+
+.droite {
+    height: 100%;
+    width: 50%;
+}
+
+.droite .projets {
+    background-color: chocolate;
+    height: 70%;
+    width: 100%;
+    text-align: right;
+}
+
+.droite .projets .back {
+    text-align: right;
+    padding: 10px;
+}
+
+.droite .projets .back img {
+    width: 20px;
+    cursor: pointer;
+}
+
+.droite .telechargement {
+    background-color: gold;
+    height: 30%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.telechargement .windows {
+    padding: 50px;
+}
+
+.telechargement .windows img {
+    width: 50px;
+    cursor: pointer;
+}
+
+.telechargement .linux {
+    padding: 50px;
+}
+
+.telechargement .linux img {
+    width: 50px;
+    cursor: pointer;
+}
+
+.prog_python {
+    display: none;
+}
+
+.prog_python.active {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+}
+
+.prog_java {
+    display: none;
+}
+
+.prog_java.active {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+}
+
+.footer {
+    background-color: steelblue;
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.footer .copyright {
+    width: fit-content;
+    padding: 15px;
+}
+
+.footer .git {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.footer .fleche {
+    position: absolute;
+    right: 0;
+}
+
+.footer .fleche img {
+    height: 8vh;
 }

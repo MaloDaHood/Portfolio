@@ -8,13 +8,14 @@
         <link rel="shortcut icon" type="image/x-icon" href="">
         <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
         <script type="text/javascript" src="JS/switch.js"></script>
+        <script type="text/javascript" src="JS/lang.js"></script>
     </head>
     <body>
-        <div class="header">
+        <div class="header" id="top">
             <h1 class="titre">Portfolio</h1>
             <div class="menu">
-                <h2 class="lien"><a href="">Lien</a></h2>
-                <h2 class="lien"><a href="">Lien2</a></h2>
+                <h2 class="lien"><a href="index.html#web">Web</a></h2>
+                <h2 class="lien"><a href="index.html#prog">Programmation</a></h2>
                 <h2 class="lien"><a href="">Lien3</a></h2>
             </div> 
         </div>
@@ -41,7 +42,7 @@
         <div class="ggp">
             <iframe class="maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d42254.073715959596!2d-3.1585891580027243!3d48.55469959571775!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48118cd489130639%3A0x40ca5cd36e636a0!2s22200%20Guingamp!5e0!3m2!1sfr!2sfr!4v1613982935800!5m2!1sfr!2sfr" allowfullscreen="" loading="lazy"></iframe>
         </div>
-        <div class="separation">
+        <div class="separation" id="web">
             <h1>Mes Projets Web</h1>
         </div>
         <div class="presentation_sites">
@@ -56,7 +57,7 @@
                 the release of Letraset sheets containing Lorem Ipsum passages, 
                 and more recently with desktop publishing software like Aldus 
                 PageMaker including versions of Lorem Ipsum.
-                </br></br></br>
+            </br>
                 <button class="switch">Je veux voir ça !</button>
             </h2>
         </div>
@@ -89,12 +90,87 @@
                 </div>
             </div>
         </div>
-        <div class="separation">
+        <div class="separation"  id="prog">
             <h1>Mes Projets de Programmation</h1>
         </div>
         <div class="langages">
-            <div class="lang">
+            <div class="c">
+                <a onclick="langC();"><img src="images/C.png"></a>
+            </div>
+            <div class="python">
+                <a onclick="langPython();"><img src="images/python.png"></a>
+            </div>
+            <div class="java">
+                <a onclick="langJava();"><img src="images/java.png"></a>
+            </div>
+        </div>
+        <div class="prog_c">
+            <div class="code">
 
+            </div>
+            <div class="droite">
+                <div class="projets">
+                    <div class="back">
+                        <a onclick="langC();"><img src="images/croix.png"></a>
+                    </div>
+                </div>
+                <div class="telechargement">
+                    <div class="windows">
+                        <a href="images/windows.png" download="C_Windows"><img src="images/windows.png"></a>
+                    </div>
+                    <div class="linux">
+                        <a href="images/linux.png" download="C_Linux"><img src="images/linux.png"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="prog_python">
+            <div class="code">
+
+            </div>
+            <div class="droite">
+                <div class="projets">
+                    <div class="back">
+                        <a onclick="langPython();"><img src="images/croix.png"></a>
+                    </div>
+                </div>
+                <div class="telechargement">
+                    <div class="windows">
+                        <a href="images/windows.png" download="C_Windows"><img src="images/windows.png"></a>
+                    </div>
+                    <div class="linux">
+                        <a href="images/linux.png" download="C_Linux"><img src="images/linux.png"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="prog_java">
+            <div class="code">
+
+            </div>
+            <div class="droite">
+                <div class="projets">
+                    <div class="back">
+                        <a onclick="langJava();"><img src="images/croix.png"></a>
+                    </div>
+                </div>
+                <div class="telechargement">
+                    <div class="windows">
+                        <a href="images/windows.png" download="C_Windows"><img src="images/windows.png"></a>
+                    </div>
+                    <div class="linux">
+                        <a href="images/linux.png" download="C_Linux"><img src="images/linux.png"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <h3 class="copyright">Réalisé par Malo Massieu Rocabois</h3>
+            <div class="git">
+                <a href="https://github.com/MaloDaHood/Portfolio"><h4 class="github">Dépôt GitHub</h4></a>
+            </div>
+            <div class="fleche">
+                <a href="#top"><img src="images/arrow.png"></a>
             </div>
         </div>
     </body>
