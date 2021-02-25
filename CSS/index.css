@@ -5,6 +5,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
 }
 
 .header {
@@ -211,13 +212,24 @@
     display: flex;
 }
 
-.code {
-    background-color: slategray;
+.gauche {
     height: 100%;
     width: 50%;
 }
 
-.code .random {
+.gauche .fichier {
+    background-color: lemonchiffon;
+    height: 10%;
+    width: 100%;
+}
+
+.gauche .code {
+    background-color: slategray;
+    height: 90%;
+    width: 100%;
+}
+
+.gauche .code .random {
     height: 100%;
     width: 100%;
 }
@@ -229,7 +241,7 @@
 
 .droite .projets {
     background-color: chocolate;
-    height: 70%;
+    height: 80%;
     width: 100%;
     text-align: right;
 }
@@ -246,7 +258,7 @@
 
 .droite .telechargement {
     background-color: gold;
-    height: 30%;
+    height: 20%;
     width: 100%;
     display: flex;
     align-items: center;
