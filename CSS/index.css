@@ -229,7 +229,17 @@
     width: 100%;
 }
 
-.gauche .code .random {
+.gauche .code .frameC {
+    height: 100%;
+    width: 100%;
+}
+
+.gauche .code .framePython {
+    height: 100%;
+    width: 100%;
+}
+
+.gauche .code .frameJava {
     height: 100%;
     width: 100%;
 }
@@ -243,7 +253,6 @@
     background-color: chocolate;
     height: 80%;
     width: 100%;
-    text-align: right;
 }
 
 .droite .projets .back {
@@ -254,6 +263,10 @@
 .droite .projets .back img {
     width: 20px;
     cursor: pointer;
+}
+
+.droite .projets .liste {
+    
 }
 
 .droite .telechargement {
@@ -274,6 +287,10 @@
     cursor: pointer;
 }
 
+.telechargement .windows img:hover {
+    width: 70px;
+}
+
 .telechargement .linux {
     padding: 50px;
 }
@@ -281,6 +298,23 @@
 .telechargement .linux img {
     width: 50px;
     cursor: pointer;
+}
+
+.telechargement .linux img:hover {
+    width: 70px;
+}
+
+.telechargement .repo {
+    padding: 50px;
+}
+
+.telechargement .repo img {
+    width: 50px;
+    cursor: pointer;
+}
+
+.telechargement .repo img:hover {
+    width: 70px;
 }
 
 .prog_python {

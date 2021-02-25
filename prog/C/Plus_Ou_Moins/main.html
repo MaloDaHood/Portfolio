@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <style>
+            *{font-size: x-large;}
+        </style>
+    </head>
+    <body>
+        <pre>
+            <code>
+#include &quot;POM.h&quot;
+
+int main(int argc, char *argv[])
+{
+    int newGame=1, nombreMystere=0;
+    while(newGame)
+    {
+        int MAX=0;
+        printf(&quot;\nNouvelle partie de Plus Ou Moins.\n\n&quot;);
+        MAX=difficulte();
+        nombreMystere=nombreJoueurs(MAX);
+        newGame=game(nombreMystere, MAX);
+    }
+    return 0;
+}
+int difficulte()
+{
+    int MAX=0;
+    printf(&quot;=== DIFFICULTE ===\n1. Facile (0/100)\n2. Moyen (0/1000)\n3. Difficile (0/10000)\n==================\n&gt;&gt;&quot;);
+    scanf(&quot;%d&quot;, &MAX);
+    switch(MAX)
+    {
+        case 1:
+            printf(&quot;Vous avez choisi le mode facile.\n&quot;);
+            return MAX=100;
+        case 2:
+            printf(&quot;Vous avez choisi le mode moyen.\n&quot;);
+            return MAX=1000;
+        case 3:
+            printf(&quot;Vous avez choisi le mode difficile.\n&quot;);
+            return MAX=10000;
+        default:
+            printf(&quot;Vous devez ecrire 1. 2 ou 3.&quot;);
+            exit(0);
+    }
+}
+int nombreJoueurs(int MAX)
+{
+    int player=0, nombreMystere=0;
+    char nomJoueur1[MAX_LENGHT]=&quot;&quot;, nomJoueur2[MAX_LENGHT]=&quot;&quot;;
+    printf(&quot;\n=== NOMBRE DE JOUEURS ===\n1. Un Joueur\n2. Deux Joueurs\n=========================\n&gt;&gt;&quot;);
+    scanf(&quot;%d&quot;, &player);
+    switch(player)
+    {
+        case 1:
+            srand(time(NULL));
+            return nombreMystere=(rand()%(MAX-MINIMUM+1))+MINIMUM;
+        case 2:
+            printf(&quot;Vous avez choisi le mode deux joueurs.\nQuel est le nom du premier joueur ?\n&gt;&quot;);
+            scanf(&quot;%s&quot;, nomJoueur1);
+            printf(&quot;Quel est le nom du deuxieme joueur ?\n&gt;&quot;);
+            scanf(&quot;%s&quot;, nomJoueur2);
+            printf(&quot;%s choisi le chiffre mystere et %s regarde pas !\n&gt;&gt;&quot;, nomJoueur2, nomJoueur1);
+            scanf(&quot;%d&quot;, &nombreMystere);
+            while(nombreMystere&lt;MINIMUM||nombreMystere&gt;MAX)
+            {
+                printf(&quot;Vous devez entrer un nombre entre %d et %d !\n&gt;&gt;&quot;, MINIMUM, MAX);
+                scanf(&quot;%d&quot;, &nombreMystere);
+            }
+            return nombreMystere;
+        default:
+            printf(&quot;Vous devez ecrire soit 1 soit 2.&quot;);
+            exit(0);
+    }
+}
+int game(int nombreMystere, int MAX)
+{
+    int inputNumber=0, compteur=0;
+    do
+    {
+        printf(&quot;Quel est le nombre ?\n&gt;&gt;&quot;);
+        scanf(&quot;%d&quot;, &inputNumber);
+        compteur++;
+        if(inputNumber==nombreMystere)
+        {
+            return rejouer(compteur, nombreMystere);
+        }
+        else if(inputNumber&lt;MINIMUM||inputNumber&gt;MAX)
+        {
+            printf(&quot;On cherhe un chiffre entre %d et %d\n&quot;, MINIMUM, MAX);
+        }
+        else if(inputNumber&gt;nombreMystere)
+        {
+            printf(&quot;C'est moins !\n&quot;);
+        }
+        else if(inputNumber&lt;nombreMystere)
+        {
+            printf(&quot;C'est plus !\n&quot;);
+        }
+        else
+        {
+            printf(&quot;ERREUR\n&quot;);
+            exit(0);
+        }
+    }while(inputNumber!=nombreMystere);
+    printf(&quot;\n\n&quot;);
+}
+int rejouer(int compteur, int nombreMystere)
+{
+    int newGame;
+    printf(&quot;Bravo, vous avez trouve le nombre mystere !!! C'etait %d.\nVous l'avez trouve en %d coups.\n&quot;, nombreMystere, compteur);
+    printf(&quot;=== REJOUER ? ===\n1. Oui\n2. Non\n=================\n&gt;&gt;&quot;);
+    scanf(&quot;%d&quot;, &newGame);
+    switch(newGame)
+    {
+        case 1:
+            return newGame=1;
+        case 2:
+            return newGame=0;
+        default:
+            printf(&quot;Vous devez écrire soit 1 soit 2.&quot;);
+            exit(0);
+    }
+}
+            </code>
+        </pre>
+    </body>
+</html>
+
