@@ -6,3 +6,4 @@ git commit -m "%input%"
 git push
 echo Push vers le serveur web :
 git push portfolio main
+pause
