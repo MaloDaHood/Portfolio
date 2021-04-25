@@ -1,0 +1,4 @@
+ErrorDocument 401 https://malo-massieu-rocabois.com/Error/401.html
+ErrorDocument 402 https://malo-massieu-rocabois.com/Error/403.html
+ErrorDocument 403 https://malo-massieu-rocabois.com/Error/403.html
+ErrorDocument 404 https://malo-massieu-rocabois.com/Error/404.html
