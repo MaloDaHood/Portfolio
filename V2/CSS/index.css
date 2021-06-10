@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+    color: #ececec;
+}
+
+.header
+{
+    text-align: center;
+    width: 100%;
+    height: 10vh;
+    line-height: 10vh;
+    background-color: #2f435e;
+}
+
+.contenu
+{
+    width: 100%;
+    height: fit-content;
+    background-color: #44566c;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.contenu img
+{
+    width: 90%;
+    height: 0.5vh;
+}
+
+.contenu .langages 
+{
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+}
+.contenu .langages img
+{
+    width: 150px;
+    height: 150px;
+}
+.contenu .langages .lang
+{
+    padding: 5vw;
+}
+
+.contenu .os-tech
+{
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.contenu a:link
+{
+    text-decoration: none;
+    color: #ececec;
+}
+
+.contenu a:visited
+{
+    text-decoration: none;
+    color: #ececec;
+}
+
+.contenu .os-tech img
+{
+    width: 150px;
+    height: 150px;
+}
+
+.contenu .os-tech .sys
+{
+    padding: 5vw;
+}
+
+.footer
+{
+    text-align: center;
+    width: 100%;
+    height: 10vh;
+    line-height: 10vh;
+    background-color: #4b5e65;
+}
