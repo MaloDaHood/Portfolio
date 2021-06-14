@@ -22,7 +22,8 @@
 .contenu
 {
     width: 100%;
-    height: fit-content;
+    height: 80vh;
+    /*max-height: fit-content;*/
     background-color: #44566c;
     align-items: center;
     justify-content: center;
@@ -35,9 +36,14 @@
     height: 0.5vh;
 }
 
+.contenu h1 
+{
+    height: 1vh;
+}
+
 .contenu .langages 
 {
-    height: fit-content;
+    height: 39.25vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -46,8 +52,8 @@
 }
 .contenu .langages img
 {
-    width: 150px;
-    height: 150px;
+    width: 7.5vw;
+    height: 7.5vw;
 }
 .contenu .langages .lang
 {
@@ -56,7 +62,7 @@
 
 .contenu .os-tech
 {
-    height: fit-content;
+    height: 39.25vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -78,8 +84,8 @@
 
 .contenu .os-tech img
 {
-    width: 150px;
-    height: 150px;
+    width: 7.5vw;
+    height: 7.5vw;
 }
 
 .contenu .os-tech .sys
@@ -89,9 +95,33 @@
 
 .footer
 {
-    text-align: center;
     width: 100%;
     height: 10vh;
     line-height: 10vh;
     background-color: #4b5e65;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer .contact
+{
+    text-align: left;
+    width: fit-content;
+    padding: 0 1vw;
+}
+
+.footer .images
+{
+    text-align: right;
+    width: fit-content;
+    padding: 0 1vw;
+    display: flex;
+    align-items: center;
+}
+
+.footer .images img
+{
+    height: 5vh;
+    margin: 0 25px;
 }
