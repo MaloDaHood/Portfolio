@@ -9,6 +9,7 @@
     scroll-behavior: smooth;
     color: #ececec;
     background-color: #2f435e;
+
 }
 
 .bt 
@@ -32,4 +33,5 @@
 .bt h1
 {
     background-color: #4b5e65;
+    font-size: xx-large;
 }
